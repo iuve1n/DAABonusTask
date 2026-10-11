@@ -1,12 +1,20 @@
 public class Node {
-    int value;
+    private int value;
     private Node leftChild;
     private Node rightChild;
 
-    Node(int value) {
+    public Node(int value) {
         this.value = value;
         this.leftChild = null;
         this.rightChild = null;
+    }
+
+    public int getValue() {
+        return value;
+    }
+
+    public void setValue(int value) {
+        this.value = value;
     }
 
     public void setLeftChild(Node leftChild) {
